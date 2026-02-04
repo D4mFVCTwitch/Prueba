@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
@@ -23,8 +23,8 @@ body {
 }
 
 .perfil {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -52,4 +52,25 @@ button {
 
 button:hover {
   background: #eee;
+}
+
+/* MEJORA PARA CELULARES */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .perfil {
+    width: 160px;
+    height: 160px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .texto {
+    font-size: 15px;
+  }
 }
